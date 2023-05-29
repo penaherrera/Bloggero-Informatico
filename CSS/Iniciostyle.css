@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#banner{
+    padding: 0 50px;
+    background-image: url(../img/Fondo.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before{
+    content: "";
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 75vh;
+    left: 0;
+}
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-banner h3{
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px 0px;
+}
+
+.contenido-banner h3 span{
+    font-weight: bold;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.boton-empezar{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid blueviolet;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+
+.boton-empezar:hover{
+    background: blueviolet;
+}
+
+@media screen and (min-width:320px) and (max-width:800px){
+    .contenido-banner h3{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 0px;
+    }
+    
+    .contenido-banner h3 span{
+        font-weight: bold;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .boton-empezar{
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid blueviolet;
+        padding: 10px 20px;
+        align-self: baseline;
+        transition: all 0.4s;
+    }
+    
+}
